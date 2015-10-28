@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<div class='panel panel-success'>
+  <div class='panel-header'>
+    <h5>Comments</h5>
+  </div>
+  <div class='panel-body'>
+    <%= @comment.author %> said: <%= @comment.comment_entry %>
+    <%= link_to 'Edit', edit_comment_path(@comment), class:'btn btn-warning'%>
+  </div>
+</div>
+
+ |
+<%= link_to 'Back to Blog', comments_path, class:'btn btn-primary'%>
