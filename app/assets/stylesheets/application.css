@@ -17,3 +17,44 @@
 .cant-see-me {
     display: none;
 }
+
+.container {
+    background: rgba(255,255,255,0.5);
+}
+
+body {
+    background: url('/assets/background.jpg') no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position:  center;
+    margin-top:80px;
+}
+
+.panel {
+    background: rgba(255,255,255,0.5);
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: normal;
+    
+}
+
+.navbar-default .navbar-brand {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700;
+    color: white;
+}
+
+.navbar-default {
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-color: rgba(0, 29, 49, 1);
+    
+}
+
+.navbar-default .navbar-nav>li>a {
+    font-family: 'Josefin Sans', sans-serif;
+    color: white;
+}
+
+.container {
+    font-family: 'Josefin Sans', sans-serif;
+}

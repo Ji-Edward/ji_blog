@@ -3,6 +3,15 @@ class BlogPostsController < ApplicationController
 
   # GET /blog_posts
   # GET /blog_posts.json
+  def user_posts
+    @user = User.find(params[:id])
+  end
+  
+  def your_posts
+    #don't need anything here
+    #we'll use association (via current_user)
+  end
+  
   def index
     @blog_posts = BlogPost.all
   end
@@ -70,6 +79,6 @@ class BlogPostsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def blog_post_params
-      params.require(:blog_post).permit(:title, :author, :blog_entry)
+      params.require(:blog_post).permit(:title, :author, :blog_entry, :user_id)
     end
 end

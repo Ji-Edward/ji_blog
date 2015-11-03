@@ -19,6 +19,7 @@ class CommentsController < ApplicationController
 
   # GET /comments/1/edit
   def edit
+    @blog_post = BlogPost.find(params[:id])
   end
 
   # POST /comments
@@ -69,6 +70,6 @@ class CommentsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def comment_params
-      params.require(:comment).permit(:author, :comment_entry, :blog_post_id)
+      params.require(:comment).permit(:author, :comment_entry, :blog_post_id, :user_id)
     end
 end
